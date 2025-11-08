@@ -69,7 +69,7 @@ class BlockchainService:
             return None
 
     def get_recent_transactions(
-        self, address: str, limit: int = 10
+        self, address: str, limit: int = 5
     ) -> List[Dict[str, Any]]:
         """
         Get recent transactions for an address
@@ -84,7 +84,7 @@ class BlockchainService:
             transactions = []
 
             # Scan last 1000 blocks (adjust based on needs)
-            blocks_to_scan = min(1000, current_block)
+            blocks_to_scan = min(100, current_block)
 
             logger.info(f"Scanning last {blocks_to_scan} blocks for {checksum_address}")
 
