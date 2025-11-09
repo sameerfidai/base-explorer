@@ -45,7 +45,6 @@ function App() {
 
       <footer className="bg-gray-800 border-t border-gray-700 mt-auto">
         <div className="max-w-7xl mx-auto px-4 py-6 text-center text-gray-400 text-sm">
-          <p>Built with FastAPI, React, and TypeScript</p>
           <p className="mt-1">Connected to Base Mainnet via Alchemy</p>
         </div>
       </footer>
