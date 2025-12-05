@@ -1,12 +1,45 @@
 # Base Explorer
 
-A blockchain transaction explorer for Coinbase's Base network.
+**Live Demo:** [base-explorer.vercel.app](https://base-explorer.vercel.app)
 
-## Project Structure
+A full-stack blockchain transaction explorer for Coinbase's Base network. Search addresses, view transaction histories, and explore block data in real-time.
 
-- `backend/` - FastAPI backend server
-- `frontend/` - React + TypeScript frontend
+## Features
 
-## Setup
+- Transaction lookup by hash
+- Address balance and transaction history
+- Block explorer with detailed block data
+- Real-time blockchain data via Base network RPC
 
-See individual README files in backend/ and frontend/ directories.
+## Tech Stack
+
+**Backend:**
+- Python FastAPI
+- Base network RPC integration
+
+**Frontend:**
+- React
+- TypeScript
+
+## Architecture
+```
+base-explorer/
+├── backend/     # FastAPI server handling RPC calls
+└── frontend/    # React UI for blockchain data visualization
+```
+
+## Local Development
+
+### Backend
+```bash
+cd backend
+pip install -r requirements.txt
+python main.py
+```
+
+### Frontend
+```bash
+cd frontend
+npm install
+npm start
+```
